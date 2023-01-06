@@ -76,6 +76,20 @@ export const RightTopCornerWrapper = styled.div`
   height: 200px;
   z-index: 999999;
   width: 445px;
+  &::before {
+    content: "";
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: -300px;
+    -webkit-transform: skew(56.1deg);
+    -ms-transform: skew(56.1deg);
+    transform: skew(56.1deg);
+    z-index: 9999;
+    width: 445px;
+    height: 200px;
+    box-shadow: 0 0 11px rgb(183 198 203 / 65%);
+  }
 `;
 export const NavIconWrapper = styled.div`
   width: 60px;
@@ -89,6 +103,11 @@ export const NavIconWrapper = styled.div`
   -moz-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
 `;
 export const HamburgerMenuWrapper = styled.div`
   position: absolute;

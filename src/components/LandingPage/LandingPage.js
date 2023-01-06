@@ -10,7 +10,7 @@ import {
 import Logo from "./Logo";
 import RightTopCorner from "./RightTopCorner";
 
-const LandingPage = () => {
+const LandingPage = (props) => {
   return (
     <Wrapper>
       <TriangleBox>
@@ -21,7 +21,7 @@ const LandingPage = () => {
       </TriangleBox>
       <Drop />
       <Drop2 />
-      <RightTopCorner />
+      <RightTopCorner menu={props.menu} setMenu={props.setMenu} />
       <Logo />
     </Wrapper>
   );

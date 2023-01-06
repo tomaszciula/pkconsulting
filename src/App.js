@@ -1,11 +1,11 @@
 import './App.css';
-import LandingPage from './components/LandingPage/LandingPage';
 import React from 'react';
+import MainView from './components/MainView/MainView';
 
 function App() {
   return (
     <div className="App">
-      <LandingPage/>
+      <MainView/>
     </div>
   );
 }
