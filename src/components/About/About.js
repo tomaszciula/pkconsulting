@@ -67,8 +67,8 @@ const About = () => {
             <LeftColumnWrapper>
               <h3>SATYSFAKCJA</h3>
               <TextWrapper>
-                Wiemy, że o istnieniu firmy decydują nasi Klienci.{" "}
-                Naszym priorytetem jest zapewnienie satysfakcji.
+                Wiem, że o istnieniu firmy decydują Klienci.{" "}
+                Moim priorytetem jest zapewnienie satysfakcji.
               </TextWrapper>
             </LeftColumnWrapper>
             <RightColumnWrapper>
