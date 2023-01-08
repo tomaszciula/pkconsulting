@@ -1,5 +1,34 @@
 import styled from "styled-components";
 
+export const Top1Wrapper = styled.div`
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  width: 100%;
+`;
+export const InnerWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 75px;
+  padding-right: 20px;
+  padding-bottom: 75px;
+  padding-left: 20px;
+  max-width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+`;
+export const Block512 = styled.div`
+  transform: translateX(-140px);
+  position: absolute;
+  z-index: 103;
+  top: 0px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: flex-start;
+`;
 export const Wrapper = styled.div`
   background-image: url(https://getknow.pl/wp-content/uploads/2020/06/bg-990.svg);
   width: 990px;
@@ -66,6 +95,25 @@ export const LogoWrapper = styled.div`
     width: 100%; /* or any custom size */
     height: 100%;
     object-fit: contain;
+  }
+`;
+export const Social = styled.div`
+  flex-direction: column;
+  display: flex;
+  text-align: left;
+  position: absolute;
+  bottom: 48px;
+  right: 300px;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  a {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 `;
 
@@ -145,7 +193,7 @@ export const Drop = styled.div`
   width: 20px;
   height: 20px;
   bottom: 10px;
-  right: 282px;
+  right: 279px;
   margin: 0 auto;
   background: #12fbd0;
   -moz-border-radius: 20px;
@@ -163,7 +211,7 @@ export const Drop = styled.div`
   -moz-animation-iteration-count: infinite;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  :before {
+  &::before {
     content: "";
     position: absolute;
     width: 0;
@@ -172,6 +220,7 @@ export const Drop = styled.div`
     border-right: 10px solid transparent;
     border-bottom: 30px solid #12fbd0;
     top: -22px;
+    box-sizing: inherit;
   }
   @keyframes drip {
     to {

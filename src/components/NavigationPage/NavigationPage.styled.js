@@ -8,7 +8,7 @@ width: 100%;
     justify-content: space-between;
     flex-direction: column;
     display: flex;
-    background-color: #152339;
+    /* background-color: #152339; */
     position: relative;
     z-index: 99999;
     canvas {
